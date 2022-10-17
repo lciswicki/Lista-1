@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class App {
+public class Main {
 	public static void main(String[] args) {
 		String input, inputLetter;
 		int output;
@@ -25,12 +25,12 @@ public class App {
 		
 		if(type == EnumClass.InputType.BINARY) {
 			System.out.println("Your number in decimal:");
-			System.out.println(methods.binaryToDecimal(input));
+			System.out.println(Methods.binaryToDecimal(input));
 			
 		};
 		if(type == EnumClass.InputType.DECIMAL) {
 			System.out.println("Your number in binary:");
-			System.out.println(methods.decimalToBinary(Integer.parseInt(input)));
+			System.out.println(Methods.decimalToBinary(Integer.parseInt(input)));
 			
 		};
 	}
